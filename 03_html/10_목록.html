@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<body>
+    <!-- shift+alt+f: 자동 들여쓰기(정리해줌) -->
+    <h1>목록</h1>
+    <!-- h1은 웬만해선 한 번만 쓰기. -->
+    <h2>음료 메뉴</h2>
+    <!-- 순서없는 목록 -->
+    <ul>
+        <li>커피
+            <p>아래는 우리 회사에서 판매되는 커피 목록입니다.</p>
+            <ul>
+                <li>아이스 아메리카노</li>
+                <li>카페 모카</li>
+                <li>카라멜 마끼아또</li>
+            </ul>
+        </li>
+        <li>우유</li>
+        <li>코카콜라</li>
+    </ul>       
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+
+    <!-- 한 줄 삭제: ctrl+x -->
+    <h2> 커피 판매 순위</h2>
+    <!-- 순서있는 목록 -->
+    <ol>
+        <li>아이스 아메리카노</li>
+        <li>카페 모카</li>
+        <li>카라멜 마끼아또</li>
+    </ol>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- 
+        정의 목록(definition/description list) -> dl
+        설명 항목(description term) -> dt
+        설명 항목의 설명(description description) -> dd
+    -->
+    <h3>약어 정의</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language의 약자로 웹 페이지의 <i>구조와 내용</i>을 정의하는 언어이다.</dd>
+        <dt>CSS</dt>
+        <dd>CSS는 Cascading Style Sheet의 약자로, HTML, XML 등의 문서를 <b>스타일을 지정(디자인)</b>하는 언어이다.</dd>
+    </dl>
+
+
+    <!-- 
+    HTML은 부모와 자식 개념이 있다.
+    - 부모와 자식 간에는 들여쓰기
+    -> 자식은 부모보다 안쪽으로 들어가게 한다.
+    - 형제관계는 들여쓰기 하지 않는다.
+    ex) <body>: 부모, <hn>: 자식
+    상속 개념: CSS, Javascript, JAVA...
+    -->
+
+    <!--
+        <ol> : 자식은 li만 사용
+            <li>
+        <ul> : 자식은 li만 사용
+            <li>
+        <dl> : 자식은 dt, dd만 사용
+            <dt>
+            <dd>    
+    -->
+</body>
+
+</html>

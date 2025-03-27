@@ -1,0 +1,5 @@
+<html></html>, <p></p>, <a></a>, <br>, <quote></quote>, <style></style>, <script></script>, <image></image>, <h1></h1>, <h2></h2>, <h3></h3>, <h4></h4>, <h5></h5>, <h6></h6>, <title></title>, <docthtml></docthtml>, <config></config>, <href></href>, <witdh></witdh>, <sorce></sorce>, <d></d>, <figure></figure>, 
+
+<head></head>, <body></body>, <meta>, <img>, <i></i>, <b></b>, <strong></strong>, <em></em>, <mark></mark>, <small></small>, <sub></sub>, <sup></sup>, <ins></ins>, <del></del>, <blockquote></blockquote>, <q></q>, <abbr></abbr>, <cite></cite>, <address></address>, <code></code>, <kbd></kbd>, <samp></samp>, <var></var>, <pr></pr>, <var></var>
+
+&nbsp;, &lt;, &gt;, &copy;, &quot;, &apos;
