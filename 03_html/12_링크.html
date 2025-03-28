@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <h1>이미지</h1>
+    <!-- 
+        이미지 자료 수집
+
+    -->
+
+
+    <!-- 
+        anchor(앵커, 닻)
+        <a href="링크" target="타깃">텍스트, 이미지, 비디오...(클릭 대상)</a>
+        
+        href는 필수 속성
+            URL -> http://, https:// ...
+            파일 -> 경로, 파일명(./, ../)
+            메일 -> mailto:
+            전화 -> tel: 
+
+        
+        프로토콜(Protocal, 통신규약)
+            컴퓨터나 전자 기기 간의 통신 방식을 정의하는 규칙 체계. 
+            HTTP, HTTPS, MAILTO, TEL, FTP(깃허브 업로드), SMTP, POP3, IMAP...
+        
+        Q. 이메일 관련 프로토콜?
+        -> SMTP, POP3, IMAP
+
+        target는 선택 속성
+        _self -> 기본값으로 현재창으로 열린다.
+        _blank -> 새 창으로 열린다.
+        _top -> 최상위(루트 root) 페이지로 열린다.
+        _parent -> 부모 페이지로 열린다.
+
+        href(hyper referance): 하이퍼참조, 하이퍼링크. 웹페이지에서 클릭 가능한 텍스트를 통해 다른 페이지나 문서를 연결할 수 있는 기능.
+      -->
+    <!-- 네이버는 현재 창으로 뜬다. -> 타깃 사이트 -->
+    <a href="https://naver.com">naver</a>
+    <!-- 구글은 새창으로 뜬다. -> 타 사이트 -->
+    <a href="https://google.com" target="_blank">구글</a>
+
+    <!-- 이메일 -->
+    <a href="mailto:cozi1230@naver.com">이메일</a>
+    <!-- 전화번호 -->
+    <a href="tel:010-9262-2945">010-9262-2945</a>
+    <!-- 파일 -->
+    <a href="./11_이미지.html">페이지</a>
+    <a href="./../70_pf/seoulmilk/서울우유/10011.jpg">서울우유 이미지</a>
+    <a href="./../70_pf/starbucks/SWOT.pdf">pdf 파일</a>
+
+    <h2>이미지에 링크 걸기</h2>
+    <a href="https://naver.com">
+        <img src="./../03_html/naver.png" alt="네이버로고"></a>
+
+</body>
+</html>
