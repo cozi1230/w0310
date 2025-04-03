@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <h1>멀티미디어</h1>
+    <!-- 
+        이미지: png(투명한 배경), gif(애니메이션), jpg
+        비디오: mp4, webm, ogv(ogg)
+        오디오: mp3, wav, ogg
+    -->
+    <img src="./../70_pf/JUST/JUST 쇼핑몰/gallery1.jpg" alt="이미지의 설명 글" width="400"><br>
+    <!-- 
+        비디오와 오디오 속성
+        1. autoplay: 자동 실행
+        2. muted: 무음
+        3. controls: 제어바(실행, 중지)
+        4. loop: 무한 반복
+        5. preload: 미리 불러오기
+    -->
+    <!-- 
+    웹 사이트에서 비디오를 재생하게 하려면, controls 를 써야 한다. 
+    이미지 크기 설정하는 것과 마찬가지로 width를 사용하여 비디오의 크기를 조절 할 수 있다.
+    -->
+    <video src="./../03_html/assets/244839_tiny.mp4" controls width="400"></video>
+    <video src="./../03_html/assets/203923-922675870_tiny.mp4" autoplay muted width="400"></video>
+    <video src="./../03_html/assets/260397_tiny.mp4" controls width="400"></video>
+    <video src="./../03_html/assets/265501_tiny.mp4" autoplay loop width="400"></video>
+    <!-- 
+        파일 변환 프로그램: https://convertio.co/kr/mp4-converter/
+            mp4 <-> webm(꽤괜) <-> ogg(화질, 성능 떨어짐)
+    -->
+    <!-- 풀스크린 비디오 -->
+    <video autoplay muted loop width="400">
+        <source src="./../03_html/assets/main_movie_new_250212.mp4" type="video/mp4">
+        <source src="./../03_html/assets/main_movie_new_250212.webm" type="video/webm">
+        <source src="./../03_html/assets/main_movie_new_250212.ogv" type="video/ogg">
+    </video>
+    <!-- 
+        비디오 자료 수집2 - 비디오 링크 걸기
+            1. 유튜브: ex> https://www.mega-mgccoffee.com/#franchise
+            2. 비메오: 
+            3. 네이버: 
+
+        비디오 플레이어: ex> https://www.woowahan.com/
+    -->
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/86gToHFkbiU"></iframe>
+    
+    <iframe src="https://www.youtube.com/embed/86gToHFkbiU" style="width:400px; height:225px; border:none;"></iframe>
+
+    <!-- 비메오 -->
+    <iframe src="https://player.vimeo.com/video/153760150?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"></iframe> 
+    <iframe src="https://player.vimeo.com/video/153760150"></iframe>
+
+    <!-- 네이버TV -->
+    <iframe src='https://tv.naver.com/embed/65322320?autoPlay=true'></iframe>
+
+    <!-- 
+    유튜브 오디오: https://studio.youtube.com/channel/UCkCxjM7byQ3sQMBqmO7it6g/music
+    --> 
+    <!-- 배경 음악 -->
+    <audio src="./assets/Mas Cafe - Casa Rosa.mp3" controls></audio>
+    
+    <audio src="./assets/Mas Cafe - Casa Rosa.mp3" autoplay></audio>
+
+    <audio controls>
+        <source src="./assets/Mas Cafe - Casa Rosa.mp3" type="audio/mpeg">
+        <source src="./assets/Mas Cafe - Casa Rosa.wav" type="audio/wav">
+        <source src="./assets/Mas Cafe - Casa Rosa.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- 효과음 -->
+
+
+</body>
+</html>
