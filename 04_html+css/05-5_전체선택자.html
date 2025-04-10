@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            기본 선택자
+                1. element(type, tag)- 태그 이름
+                2. class - .이름, 여러 번
+                3. id - #이름, 한 번만
+                4. group(그룹) - ,(콤마)
+                5. all(전체) - *(별표)
+        */
+        /* 
+            *는 전체 -> HTML포함 안의 모든 태그(HEAD태그와 HEAD안의 태그는 제외)
+            -> HTML, BODY, H1, H2, P
+        */
+        html {border: 5px solid lightblue;}
+        body {border: 5px solid lightblue;}
+        h1 {border: 5px solid lightblue;}
+        h2 {border: 5px solid lightblue;}
+        p {border: 5px solid lightblue;}
+        
+        html, body, h1, h2, p {border: 5px solid lightblue;}
+
+        /*
+            * {선언부}
+            선택자 * {선언부} -> 일반저긍로 이렇게 사용한다
+        */
+        /* 결합자 선택자/선택기 - 공백 */
+        /* 요소(공백)전체 */
+        body * {border: 5px solid lightblue;}
+    </style>
+</head>
+<body>
+    <h1>선택자</h1>
+    <h2>요소(타입, 태그) 선택자</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html> 
