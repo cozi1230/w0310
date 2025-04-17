@@ -6,25 +6,43 @@
     <title>HTML</title>
 </head>
 <body>
-    <form action="#" method="post">
-        <fieldset>
-            <legend>type 속성</legend>
-            <p>아이디 : <input type="text"></p>
-            <p>비밀번호 : <input type="password"></p>
-            <p>검색 : <input type="search"></p>
-            <p>이메일 : <input type="email"></p>
-            <p>전화번호 : <input type="tel"></p>
-            <p>컬러선택 : <input type="color"></p>
-            <p>수량 : <input type="number" min="1" max="10" value="1"></p>
-            <p>만족도 : <input type="range" min="1" max="10" value="1"></p>
-            <p>예<input type="radio" name="receive" checked="checked">아니오<input type="radio" name="receive"></p>
-            <p>html<input type="checkbox" checked="checked"> css<input type="checkbox"></p>
-            <p><input type="submit" value="전송"></p>
-            <p><input type="reset" value="취소"></p>
-            <p><input type="button" value="확인"></p>
-            <p><input type="image" src="images/bt.png" alt="검색"></p>
-            <p><input type="file"></p>
-        </fieldset>
-    </form>
+    아이디: <input type="text"> <br>
+    비밀번호: <input type="password"> <br>
+    <input type="hidden"> <br>
+
+    검색: <input type="search"> <br>
+    URL: <input type="url"> <br>
+    전화번호: <input type="tel"> <br>
+    이메일: <input type="email"> <br>
+
+    수강 과목:
+    <!-- checkbox와 radio의 value는 서버로 전송할 데이터 값이다. -->
+    <input type="checkbox" name="chkgroup" value="html" checked>HTML
+    <input type="checkbox" name="chkgroup" value="css">CSS <br>
+    이메일 수신여부:
+    <input type="radio" name="radiogroup" value="yes"> 동의 함
+    <input type="radio" name="radiogroup" value="no"> 동의 하지 않음<br>
+    
+    수량: <input type="number"> <br>
+    만족도: <input type="range"> <br>
+
+    <!-- 전송: 가입하기, 로그인, ... -->
+    <input type="submit" value="가입하기"> <br>
+    <!-- 초기화: 취소, 로그아웃, ... -->
+    <input type="reset" value="취소하기"> <br>
+    <!-- 전송과 초기화가 아닌 경우: 애니메이션, ... -->
+    <input type="button" value="가입하기"> <br>
+    <!-- 버튼을 이미지로 디자인하여 사용하고 싶을 때(잘 안 씀, but svg파일로 올리면 이미지 깨짐현상 X) -->
+    <input type="image" src="./../03_html/초기화버튼.png" alt="초기화버튼"> <br>
+    <input type="image" src="./../03_html/로그인버튼.svg" alt="로그인"> <br>
+    첨부할 파일: <input type="file"> <br>
+
+    컬러 선택: <input type="color"> <br>
+
+    <input type="date"> <br>
+    <input type="datetime-local"> <br>
+    <input type="month"> <br>
+    <input type="week"> <br>
+    <input type="time">
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style type="text/css">
+        /* 
+            하위 선택자 -> 선택자를 공백으로 구분
+            선택자1 선택자2
+            (앞)조상 (뒤)자손
+            조상: 부모도 포함한다.
+            자손(하위): 자식과 손자 모두를 가르킨다.
+
+        */
+        /* div 중에서 클래스 이름이 abox 요소의 자손 p를 선택하여 */
+        /* div.abox p {} */
+        /*  클래스 이름이 abox 요소인 자손 p를 선택하여 */
+        .abox p {
+            color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="abox">
+        <p>7월의 여행지</p>
+        <p>8월의 여행지</p>
+        <ul>
+            <li>
+                <p>1주차 여행지</p>
+            </li>
+            <li>
+                <p>2주차 여행지</p>
+            </li>
+        </ul>
+    </div>
+    <p>내년의 여행지</p>
+</body>
+
+</html>
