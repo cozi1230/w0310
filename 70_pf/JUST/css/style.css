@@ -27,8 +27,8 @@ body {background: fff; color: #333;}
 /* 푸터 */
 .footer {display: flex; height: 100px;}
 /* 하단로고 */
-.blogo {height: 100px;}
+.blogo {height: 269px;}
 /* 주소 및 저작권 */
-.copy {width: 200px;}
+.copy {width: 667px;}
 /* SNS */
-.sns {width: 100px;}
+.sns {width: 264px;}
