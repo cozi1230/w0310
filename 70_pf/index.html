@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>김다영</title>
+    <title>JUST 쇼핑몰</title>
+    <!-- 외부 스타일 방식 -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<h1>서울우유</h1>
-<p>서울우유 메인페이지 시안입니다.</p>
-<ul>
-    <li><img src="./70_pf/seoulmilk/main.jpg" alt="서울우유 메인페이지 시안" style="width:300px; border: 1px solid #ccc"></li>
-    <li><img src="./70_pf/seoulmilk/Wireframe.jpg" alt="서울우유 메인페이지 와이어프레임"  style="width:300px; border: 1px solid #ccc"></li>
-    <li><img src="./70_pf/seoulmilk/SWOT.jpg" alt="서울우유 SWOT"  style="width:300px; border: 1px solid #ccc"></li>
-    <li><img src="./70_pf/seoulmilk/mindmap.jpg" alt="서울우유 MindMap"  style="width:300px; border: 1px solid #ccc"></li>
-</ul>
-    
-
-
-
+    <!-- ctrl+enter: 문장 변형 없이 단락 이동 -->
+    <!-- 전체 콘텐츠 가로 크기 1200, 가운데 배치 -->
+    <div class="wrap">
+        <header class="header">
+            <!-- 
+            자격시험은 a태그의 링크는 #이다.
+            #: 임시링크, 현재 페이지의 최상단을 가르킴 
+            -->
+            <h1 class="logo"><a href="#"><img src="./../70_pf/JUST/images/logo.jpg" alt="로고"></a></h1>
+            <!-- gnb: global navigation bar -> 웹 사이트의 모든 페이지에 존재하는 내비게이션 -->
+            <nav class="gnb"><img src="./../70_pf/JUST/images/index_02.jpg" alt="내비게이션"></nav>
+        </header>
+        <!-- div.slide 또는 .slide 탭 -->
+        <div class="slide"><img src="./../70_pf/JUST/images/index_03.jpg" alt="슬라이드 이미지1"></div>
+        <div class="contents">
+            <div class="notice">
+                <img src="./JUST/images/index_06.jpg" alt="공지사항">
+            </div>
+            <div class="banner">
+                <a href="#"><img src="./JUST/images/index_07.jpg" alt="배너"></a>
+            </div>
+            <div class="shortcut">
+                <a href="#"><img src="./JUST/images/index_05.jpg" alt="바로가기"></a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="blogo">
+                <img src="./JUST/images/index_08.jpg" alt="하단 로고">
+            </div>
+            <div class="copy">
+                <img src="./JUST/images/index_09.jpg" alt="저작권">
+            </div>
+            <div class="sns">
+                <img src="./JUST/images/index_10.jpg" alt="sns">
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
