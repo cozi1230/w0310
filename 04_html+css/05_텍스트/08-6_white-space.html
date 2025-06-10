@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            white-space: 문자들 사이의 공백 처리 방식
+            공백: spacebar(tab), enter(강제개행)
+            normal 
+                - 자동 줄바꿈o, 
+                - spacebar(tab), enter 모두x
+            nowrap
+                - 자동 줄바꿈x
+                - spacebar(tab), enter 모두x
+            pre
+                - 자동 줄바꿈x
+                - spacebar(tab), enter 모두o
+            pre-wrap
+                - 자동 줄바꿈o
+                - spacebar(tab), enter 모두o
+            pre-line
+                - 자동 줄바꿈o
+                - spacebar(tab) x
+                - enter o
+
+
+        */
+        p {
+            width: 400px;
+            border: 1px solid #000; /* bd */
+        }
+        p:nth-of-type(1) {
+            white-space: normal; /* whs:n */
+        }
+        p:nth-of-type(2) {
+            white-space: nowrap; /* whs */
+        }
+        p:nth-of-type(3) {
+            white-space: pre; /* whs:p */
+        }
+        p:nth-of-type(4) {
+            white-space: pre-wrap; /* whs:pw */
+        }
+        p:nth-of-type(5) {
+            white-space: pre-line; /* whs:pl */
+        }
+    </style>
+</head>
+<body>
+    <h1>white-space 속성</h1>
+    <p>Lorem                    ipsum dolor sit amet consectetur adipisicing elit. Hic quas similique nulla assumenda ex quo, nihil eius exercitationem, perferendis neque accusamus quam dolor error saepe ullam inventore. Dolorem, corporis quia.</p>
+    <p>Lorem           
+        ipsum                   dolor sit amet consectetur adipisicing elit. Hic quas similique nulla assumenda ex quo, nihil eius exercitationem, perferendis neque accusamus quam dolor error saepe ullam inventore. Dolorem, corporis quia.</p>
+    <p>Lorem           
+        ipsum                   dolor sit amet consectetur adipisicing elit. Hic quas similique nulla assumenda ex quo, nihil eius exercitationem, perferendis neque accusamus quam dolor error saepe ullam inventore. Dolorem, corporis quia.</p>
+    <p>Lorem           
+        ipsum                   dolor sit amet consectetur adipisicing elit. Hic quas similique nulla assumenda ex quo, nihil eius exercitationem, perferendis neque accusamus quam dolor error saepe ullam inventore. Dolorem, corporis quia.</p>
+    <p>Lorem           
+        ipsum                   dolor sit amet consectetur adipisicing elit. Hic quas similique nulla assumenda ex quo, nihil eius exercitationem, perferendis neque accusamus quam dolor error saepe ullam inventore. Dolorem, corporis quia.</p>
+</body>
+</html>

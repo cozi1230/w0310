@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형제 선택자</title>
+    <style>
+        /* 
+            Tilde (틸드, ~)
+            선택자1 ~ 선택자2
+            형 ~ 모든제
+        */
+
+        h3 ~ p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>내가 첫 째야~</h3>
+    <p>나는 선택 됐다.</p>
+    <p>나도 선택 됐다.</p>
+    <ul>
+        <li>
+            <p>나는 h3 동생 아니다.</p>
+        </li>
+        <li>
+            <p>나도 h3 동생 아니다.</p>
+        </li>
+    </ul>
+    <p>나두 선택 됐다.</p>
+</body>
+
+</html>

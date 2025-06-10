@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        p {
+            width: 200px;
+            text-align: justify;
+            border: 1px solid #000;
+        }
+        .breaking {
+            /* 양쪽 맞춤 했을 경우 글자를 깨뜨린다. */
+            word-break: break-all; /* wbb */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quam quis consequatur voluptatibus, ipsa perspiciatis vero sed, sint tempora culpa doloribus ullam eos molestiae. Cupiditate a tempore dolores sit quod?</p>
+    <p class="breaking">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum dicta nesciunt, modi aliquid maxime tempora, aliquam natus qui quae omnis ex ad? Alias provident amet ducimus cumque dolorem, expedita deserunt?</p>
+</body>
+</html>

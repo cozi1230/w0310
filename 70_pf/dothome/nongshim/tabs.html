@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS :target Tabs</title>
+    <style>
+        /* 탭 */
+        .tabs {
+            height: 250px;
+            padding: 30px 35px;
+            line-height: 2;
+        }
+
+        /* 탭 버튼 */
+        .tabs .btn a {
+            border-left: 1px solid #333;
+            border-top: 1px solid #333;
+            padding: 5px 15px;
+            background: #333;
+            color: #fff;
+        }
+
+        .tabs .btn a.active {
+            background: #fff;
+            color: #333;
+        }
+
+        .tabs .btn a:first-of-type {
+            margin-left: 20px;
+        }
+      
+        .tabs .btn a:last-of-type {
+            border-right: 1px solid #333;
+        }
+
+        /* 탭 콘텐츠 */
+        .tabs div {
+            display: none;
+        }
+        
+        /* 공지사항 */
+        #tab1 a {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            padding: 0 16px;
+        }
+
+        #tab1 a:hover {
+            background: red;
+            color: #fff;
+        }
+
+        /* 탭: 갤러리 */
+        #tab2 {
+            display: none;
+        }
+
+        #tab2 a:not(:last-of-type) {
+            margin-right: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <span class="btn">
+            <a href="#tab1">공지사항</a>
+            <a href="#tab2">갤러리</a>
+        </span>
+
+        <div id="tab2" class="tab-content">
+            <a href="#"><img src="./images/gallery1.jpg" alt="이미지1"></a>
+            <a href="#"><img src="./images/gallery2.jpg" alt="이미지2"></a>
+            <a href="#"><img src="./images/gallery3.jpg" alt="이미지3"></a>
+        </div>
+
+        <div id="tab1" class="tab-content">
+            <ul>
+                <li><a href="#">공지사항입니다.</a><span>2025-06-02</span></li>
+                <li><a href="#">공지사항입니다.</a><span>2025-06-02</span></li>
+                <li><a href="#">공지사항입니다.</a><span>2025-06-02</span></li>
+                <li><a href="#">공지사항입니다.</a><span>2025-06-02</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // 1. 탭 버튼을 클릭하면 함수 실행
+            $('.tabs .btn a').click(function () {
+                // 2. 갤러리 버튼에 .active 클래스 추가
+                $(this).addClass('active');
+                // 3. this 형제의 .active 클래스 제거
+                $(this).siblings().removeClass('active');
+
+                // 4. 클릭한 버튼의 순번을 idx에 저장
+                var idx = $(this).index();
+                // 5. idx 순번에 해당하는 div를 보여준다.
+                $('.tabs div').eq(idx).show();
+                // 6. idx 순번에 해당하는 div의 형제는 숨긴다.
+                $('.tabs div').eq(idx).siblings().hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
